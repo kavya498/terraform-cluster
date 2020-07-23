@@ -12,7 +12,7 @@ provider "ibm" {}
 
 
 data "ibm_container_cluster_config" "cluster_config" {
-  cluster_name_id = "c88557ca-c79e-4cf0-88b1-1713cdd6976d"
+  cluster_name_id = "bs79g2k20piq1r143ps0"
 }
 
 resource "random_id" "name" {
