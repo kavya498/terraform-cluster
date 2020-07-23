@@ -1,4 +1,6 @@
-provider "ibm" {}
+provider "ibm" {
+  ibmcloud_api_key=var.ic_api_key
+  }
 /*resource "ibm_container_cluster" "cluster" {
   name              = "${var.cluster_name}${random_id.name.hex}"
   datacenter        = "${var.datacenter}"
