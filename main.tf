@@ -1,22 +1,5 @@
-provider "ibm" {
-  ibmcloud_api_key=var.ic_api_key
-  }
-/*resource "ibm_container_cluster" "cluster" {
-  name              = "${var.cluster_name}${random_id.name.hex}"
-  datacenter        = "${var.datacenter}"
-  no_subnet         = true
-  default_pool_size = 2
-  machine_type      = "${var.machine_type}"
-  hardware         = "shared"
-  public_vlan_id    = "${var.public_vlan_id}"
-  private_vlan_id   = "${var.private_vlan_id}"
-}*/
-
+provider "ibm" {}
 
 data "ibm_container_cluster_config" "cluster_config" {
   cluster_name_id = "bs79g2k20piq1r143ps0"
-}
-
-resource "random_id" "name" {
-  byte_length = 4
 }
