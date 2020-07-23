@@ -1,6 +1,8 @@
 variable "datacenter" {
   default = "dal10"
 }
+variable "ic_api_key" {
+}
 
 variable "machine_type" {
   default = "b2c.8x32"
