@@ -13,3 +13,4 @@ resource "kubernetes_namespace" "example" {
   metadata {
     name = "terraform-example-namespace"
   }
+}
